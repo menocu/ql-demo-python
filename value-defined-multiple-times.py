@@ -1,10 +1,11 @@
 
-def multiple_definitions(value):
+def multiple_definitions_if(value, flag):
 
-    foo = 123 # unnecessary assignment, value 123 is never read
-    if value:
+    foo = value # unnecessary assignment, foo is never read before assignment
+    if flag:
         foo = "bar"
     else:
         foo = "baz"
 
     print foo
+
