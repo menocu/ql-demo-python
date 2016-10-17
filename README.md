@@ -1,0 +1,1 @@
+# Demo repository for QL python queries on lgtm
