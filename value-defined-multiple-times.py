@@ -7,5 +7,11 @@ def multiple_definitions_if(value, flag):
     else:
         foo = "baz"
 
-    print foo
+    print(foo)
 
+def multiple_definitions_simple(value, flag):
+
+    foo = value # unnecessary assignment, foo is never read before assignment
+    if flag:
+        foo = "bar"
+        print(foo)
