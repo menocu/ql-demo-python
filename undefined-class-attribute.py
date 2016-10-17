@@ -19,3 +19,12 @@ class ChildClass(lib.classes.ClassWithAttribute):
     def readBar2(self):
         return self.bat # typo / mispelling of bar
 
+a = BasicClass()
+a.setFoo("foo")
+a.readFoo1() # works
+a.readFoo2() # AttributeError
+
+b = ChildClass()
+b.setBar("bar")
+b.readBar1() # works
+b.readBar2() # AttributeError
